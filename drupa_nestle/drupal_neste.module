@@ -1,0 +1,10 @@
+<?php
+
+function drupal_nestle_theme($existing, $type, $theme, $path){
+    return [
+        'glossary' => [
+            'items' => ['content'=>NULL]
+        ]
+    ]
+}
+

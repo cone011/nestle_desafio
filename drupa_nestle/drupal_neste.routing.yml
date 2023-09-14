@@ -1,0 +1,15 @@
+drupal_nestle.api_config_page:
+  path: "/admin/config/drupa-api"
+  defaults:
+    _form: '\Drupal\drupal_nestle\Form\DrupalApi'
+    _title: "Drupal api - Settings"
+    requirements:
+      _permission: "access content"
+
+drupal_nestle.listing:
+  path: "/drupal-nestle"
+  defaults:
+    _controller: '\Drupal\drupal_nestle\Controller\DrupalNestle::content'
+    _title: "Drupal Nestle"
+  requirements:
+    _permission: "access content"
